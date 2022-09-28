@@ -1,0 +1,61 @@
+nav{
+    text-align: center;
+    color: rgb(98, 204, 28);
+    font-style: italic bold;
+    font-size: 50px;
+    
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box{
+    display: flex;
+    border: solid 2px black;
+    font-size: 8vw;
+    cursor: pointer;
+    justify-content: center;
+}
+.box:hover{
+    background-color: aquamarine;
+    
+}
+.imgContainer img{
+   width: 0;
+   transition:width 1s ease-in-out ;
+}
+
+.gameover{
+   color: black;
+   animation-name:textGameOver;
+   transition:width 1s ease-in-out ;
+   animation-duration: 20s; 
+ }
+ @keyframes textGameOver {
+    from {color: red;}
+    to {color: red;}
+  }
+
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
